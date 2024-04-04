@@ -35,12 +35,39 @@
                 </ul>
             </nav>
         </header>
+
+        <main>
+            <div class="hero-left">
+                <h1>Get Your Bouqet! </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis molestias repudiandae laudantium, illum eos animi,
+                 officia, ratione expedita voluptatem ab quaerat quos sapiente mollitia quod nulla porro dolore. Deleniti, odit.
+                </p>
+                    <button class="btn-primary">Shop Now</button>
+            </div>
+            <div class="hero-right">
+                <img src="flowerhero.png" alt="Flower hero">
+            </div>
+        </main>
+
+       <div class="handmade-section">
+       <img src="heart.svg" alt="">  
+       <h2 class="handmade"><span class="handmade">  Handmade </span>   with   love!</h2>
+       <img src="heart.svg" alt=""> 
+       </div> 
+
+        <section class="flower-photos">
+            <div class="flower-photo"></div>
+            <div class="flower-photo"></div>
+            <div class="flower-photo"></div>
+        </section>
+
     </div>
 
     <script>
         const menu = document.querySelector('nav ul');
         const menuBtn = document.querySelector('.menu-open');
         const closeBtn = document.querySelector('.menu-close');
+        const button = document.querySelector('button')
 
         menuBtn.addEventListener('click', () => {
             menu.classList.add('open');
@@ -48,6 +75,7 @@
 
         closeBtn.addEventListener('click',() => {
             menu.classList.remove('open');
+
         });
 
     </script>
