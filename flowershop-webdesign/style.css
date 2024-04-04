@@ -99,7 +99,6 @@ header{
 
     &:hover{
         cursor: pointer;
-        color:black;
         background-color: #b86166;
 
         opacity: 0.9;
@@ -119,6 +118,7 @@ header{
         border-radius: 50px;
         background-repeat: no-repeat;
         margin-bottom: 2em;
+        position: relative;
     }
 
     .flower-photo:nth-child(1){
@@ -137,10 +137,104 @@ header{
 
 }
 
+.handmade-section{
+    text-align: center;
+    text-align: center;
+    margin-top: 3em;
+}
+
+.handmade{
+   
+    font-family: "Inter", sans-serif;
+    font-size: 1.8rem;
+    word-spacing: 0.5em;
+    display: inline;
+}
+
+span.handmade{
+    font-family: "Satisfy", cursive;
+    font-size: 2.5rem;
+    color: #b86166;
+}
 
 
+.step{
+    border-radius: 50px;
+    position: absolute;
+    width: 105%;
+    padding:0.4em;
+    box-shadow: 1px 3px 1px 1px rgba(0,0,0,0.4);
+
+    .step-circle{
+        background-color: #b86166;
+        width: 100%;
+        padding: 1em;
+        border-radius: 2em;
+        font-weight: bold;
+        color: white;
+        font-family: 'Inter', sans-serif;
+
+        &:hover{
+            cursor: pointer;
+            opacity: 0.9;
+        }
+    }
+
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 
+table{
+    width: 80%;
+    height: 40vh;
+    margin: 4em 2em;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+td{
+    border: 1px solid black;
+    padding:.5em;
+    white-space: nowrap;
+    font-size: 1rem
+}
+
+.cursive-text{
+    font-family: "Satisfy", cursive;
+    letter-spacing: 0.2em;
+    font-size: 1.7rem;
+
+}
+
+td img{
+    width: 40px;
+    height: 20px;
+}
+
+tr:last-child td {
+    height: 70px; 
+}
+
+.title{
+    font-weight: bold;
+    letter-spacing: 0.2em;
+}
+
+.click{
+    text-decoration: underline;
+    cursor: pointer;
+}
+}
+
+@media (max-width:480px){
+    table{
+        display: none;
+    }
+}
 
 
 @media (min-width:768px){
@@ -192,23 +286,4 @@ header{
     }
 }
 
-.handmade-section{
-    text-align: center;
-    text-align: center;
-    margin-top: 3em;
-}
-
-.handmade{
-   
-    font-family: "Inter", sans-serif;
-    font-size: 1.8rem;
-    word-spacing: 0.5em;
-    display: inline;
-}
-
-span.handmade{
-    font-family: "Satisfy", cursive;
-    font-size: 2.5rem;
-    color: #b86166;
-}
 
